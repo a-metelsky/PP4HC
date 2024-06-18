@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.24054.188" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>SK4HC</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="StarterKit for Healthcare" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>DefaultPublisherorg274f21c2</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Default Publisher for org274f21c2" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="Default publisher for this organization" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>new</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="msemr_schedule" behavior="2" />
+      <RootComponent type="61" schemaName="new_GenerateSlot" behavior="0" />
+      <RootComponent type="80" schemaName="msemr_HealthcareAdministration" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_portalcomment" displayName="Secure Message" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_appointmentemr" displayName="Appointment (EMR)" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_careplan" displayName="Care Plan" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_careteam" displayName="Care Team" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_careteamparticipant" displayName="Care Team Participant" solution="FHIRClinicalCareTeam (4.2.3.3)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_claim" displayName="Claim" solution="FHIRFinancial (4.3.3.1)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_codeableconcept" displayName="Codeable Concept" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_condition" displayName="Condition" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_contactlink" displayName="Link" solution="FHIRAdministrationCore (4.4.3.3)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_coverage" displayName="Coverage" solution="FHIRFinancial (4.3.3.1)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_diagnosticreport" displayName="Diagnostic Report" solution="FHIRDiagnosticReport (4.4.3.1)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_encounter" displayName="Encounter" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_location" displayName="Location" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_medicalidentifier" displayName="Medical Identifier" solution="FHIRMedicationCore (4.4.3.4)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_medicationrequest" displayName="Medication Request" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_observation" displayName="Observation" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_procedure" displayName="Procedure" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_relatedperson" displayName="Related Person" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_schedule" displayName="Schedule" solution="FHIRCommonCore (4.4.3.5)">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_schedule" displayName="Schedule" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_ve_allergyintolerance" displayName="Allergy/Sensitivity" solution="HealthcareVirtualTables (4.4.3.6)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_ve_encounter" displayName="Encounter" solution="HealthcareVirtualTables (4.4.3.6)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_ve_episodeofcare" displayName="Episode of Care" solution="HealthcareVirtualTables (4.4.3.6)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_ve_location" displayName="Location" solution="HealthcareVirtualTables (4.4.3.6)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msemr_ve_observation" displayName="Observation" solution="HealthcareVirtualTables (4.4.3.6)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Codeable Concepts" displayName="Active Codeable Concepts" parentSchemaName="msemr_codeableconcept" parentDisplayName="Codeable Concept" solution="FHIRCommonCore (4.4.3.5)" id="{44c3752b-686f-4a4f-8078-2ff83304f8d4}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active conditions" displayName="Active conditions" parentSchemaName="msemr_condition" parentDisplayName="Condition" solution="FHIRCommonCore (4.4.3.5)" id="{f2c9921c-7d5b-4fe3-90e3-ffbe7e2274ec}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Diagnostic Reports" displayName="Active Diagnostic Reports" parentSchemaName="msemr_diagnosticreport" parentDisplayName="Diagnostic Report" solution="FHIRDiagnosticReport (4.4.3.1)" id="{3d05c184-45a2-424e-a03f-519a266eba41}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Medication Requests" displayName="Active Medication Requests" parentSchemaName="msemr_medicationrequest" parentDisplayName="Medication Request" solution="FHIRCommonCore (4.4.3.5)" id="{9f76e648-1e9d-4e09-b212-b7650b58546a}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Patients" displayName="Active Patients" parentSchemaName="contact" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{81fbba27-3ef4-ea11-a815-000d3a5bf119}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Practitioners" displayName="Active Practitioners" parentSchemaName="contact" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{4398634c-3ef4-ea11-a815-000d3a5bf119}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Procedures" displayName="Active Procedures" parentSchemaName="msemr_procedure" parentDisplayName="Procedure" solution="FHIRCommonCore (4.4.3.5)" id="{37f42566-b883-41a7-931a-e157e86e063d}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Encounters" displayName="All Encounters" parentSchemaName="msemr_ve_encounter" parentDisplayName="Encounter" solution="HealthcareVirtualTables (4.4.3.6)" id="{34093df3-0020-46ba-b2aa-0d248e39d3fb}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All People" displayName="All People" parentSchemaName="contact" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{a968a360-a50c-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Condition Advanced Find View" displayName="Condition Advanced Find View" parentSchemaName="msemr_condition" parentDisplayName="Condition" solution="FHIRCommonCore (4.4.3.5)" id="{c0a494dd-3441-4668-beca-5b01e4db9823}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Condition Lookup View" displayName="Condition Lookup View" parentSchemaName="msemr_condition" parentDisplayName="Condition" solution="FHIRCommonCore (4.4.3.5)" id="{834d16cf-d0af-45df-8638-fd78538193b2}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Conditions Associated View" displayName="Conditions Associated View" parentSchemaName="msemr_condition" parentDisplayName="Condition" solution="FHIRCommonCore (4.4.3.5)" id="{0ce8fde2-9973-4321-acca-313cd9c660f6}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Diagnostic Report Advanced Find View" displayName="Diagnostic Report Advanced Find View" parentSchemaName="msemr_diagnosticreport" parentDisplayName="Diagnostic Report" solution="FHIRDiagnosticReport (4.4.3.1)" id="{08c0194c-ec0b-496a-a84e-efafc15b10da}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Diagnostic Report Associated View" displayName="Diagnostic Report Associated View" parentSchemaName="msemr_diagnosticreport" parentDisplayName="Diagnostic Report" solution="FHIRDiagnosticReport (4.4.3.1)" id="{97510904-75d9-44e7-8012-af3e2832846f}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Diagnostic Report Lookup View" displayName="Diagnostic Report Lookup View" parentSchemaName="msemr_diagnosticreport" parentDisplayName="Diagnostic Report" solution="FHIRDiagnosticReport (4.4.3.1)" id="{0e32fa86-ed4a-40ee-9799-c94a16fbfacc}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Encounter Advanced Find View" displayName="Encounter Advanced Find View" parentSchemaName="msemr_ve_encounter" parentDisplayName="Encounter" solution="HealthcareVirtualTables (4.4.3.6)" id="{993b88d7-15ad-43eb-8e7b-a28331a7fc38}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Encounter Associated View" displayName="Encounter Associated View" parentSchemaName="msemr_ve_encounter" parentDisplayName="Encounter" solution="HealthcareVirtualTables (4.4.3.6)" id="{b555d877-bccc-46b8-944f-c73850dfd694}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Encounter Lookup View" displayName="Encounter Lookup View" parentSchemaName="msemr_ve_encounter" parentDisplayName="Encounter" solution="HealthcareVirtualTables (4.4.3.6)" id="{38072885-0795-4425-92a9-8fa878fc82f3}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Conditions" displayName="Inactive Conditions" parentSchemaName="msemr_condition" parentDisplayName="Condition" solution="FHIRCommonCore (4.4.3.5)" id="{03005c0f-3e0b-42b2-8f74-30aa69fd03d9}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Diagnostic Reports" displayName="Inactive Diagnostic Reports" parentSchemaName="msemr_diagnosticreport" parentDisplayName="Diagnostic Report" solution="FHIRDiagnosticReport (4.4.3.1)" id="{e8dcdd05-6b0d-48cc-9598-9c52cf3f416b}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Medication Requests" displayName="Inactive Medication Requests" parentSchemaName="msemr_medicationrequest" parentDisplayName="Medication Request" solution="FHIRCommonCore (4.4.3.5)" id="{08d1df77-8bea-4cc0-865e-2908d8e6c932}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Procedures" displayName="Inactive Procedures" parentSchemaName="msemr_procedure" parentDisplayName="Procedure" solution="FHIRCommonCore (4.4.3.5)" id="{5358072e-55e9-4976-b587-d435f819cb3d}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Medication Request Advanced Find View" displayName="Medication Request Advanced Find View" parentSchemaName="msemr_medicationrequest" parentDisplayName="Medication Request" solution="FHIRCommonCore (4.4.3.5)" id="{448cb703-cb70-4dee-a094-a2493d5278b9}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Medication Request Associated View" displayName="Medication Request Associated View" parentSchemaName="msemr_medicationrequest" parentDisplayName="Medication Request" solution="FHIRCommonCore (4.4.3.5)" id="{5bad1960-f0a0-42a6-b2e0-81a5053d59a4}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Medication Request Lookup View" displayName="Medication Request Lookup View" parentSchemaName="msemr_medicationrequest" parentDisplayName="Medication Request" solution="FHIRCommonCore (4.4.3.5)" id="{c2e75ada-4113-48c7-9585-324082a4816f}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Procedure Advanced Find View" displayName="Procedure Advanced Find View" parentSchemaName="msemr_procedure" parentDisplayName="Procedure" solution="FHIRCommonCore (4.4.3.5)" id="{0f20b75e-a16c-4e8f-a347-a64a31366913}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Procedure Associated View" displayName="Procedure Associated View" parentSchemaName="msemr_procedure" parentDisplayName="Procedure" solution="FHIRCommonCore (4.4.3.5)" id="{c010a015-b066-42dd-a734-77900d8b588d}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Procedure Lookup View" displayName="Procedure Lookup View" parentSchemaName="msemr_procedure" parentDisplayName="Procedure" solution="FHIRCommonCore (4.4.3.5)" id="{77e947e8-9573-46e6-9211-39791b49c521}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quick Find Active Conditions" displayName="Quick Find Active Conditions" parentSchemaName="msemr_condition" parentDisplayName="Condition" solution="FHIRCommonCore (4.4.3.5)" id="{0d4a5f68-6fe5-430f-aa1f-f6a7d79e2167}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quick Find Active Diagnostic Reports" displayName="Quick Find Active Diagnostic Reports" parentSchemaName="msemr_diagnosticreport" parentDisplayName="Diagnostic Report" solution="FHIRDiagnosticReport (4.4.3.1)" id="{40e8c88d-eac1-4411-9c67-f2c101435140}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quick Find Active Encounters" displayName="Quick Find Active Encounters" parentSchemaName="msemr_ve_encounter" parentDisplayName="Encounter" solution="HealthcareVirtualTables (4.4.3.6)" id="{71775051-39be-4d84-bb17-757cd7a6c332}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quick Find Active Medication Requests" displayName="Quick Find Active Medication Requests" parentSchemaName="msemr_medicationrequest" parentDisplayName="Medication Request" solution="FHIRCommonCore (4.4.3.5)" id="{7efc7f6a-3407-4f91-9804-47cc4e37b21c}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quick Find Active Procedures" displayName="Quick Find Active Procedures" parentSchemaName="msemr_procedure" parentDisplayName="Procedure" solution="FHIRCommonCore (4.4.3.5)" id="{6959166d-c9ba-4da7-97e3-76118b385b70}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="300" schemaName="cr1d8_healthcareadministrationdefaultcommandlibrary_247f4" displayName="HealthcareAdministration_DefaultCommandLibrary" solution="Active" />
+        <Dependent type="AppElement" displayName="cr1d8_msemr_HealthcareAdministration_canvasappid_cr1d8_healthcareadministrationdefaultcommandlibrary_247f4" id.uniquename="cr1d8_msemr_HealthcareAdministration_canvasappid_cr1d8_healthcareadministrationdefaultcommandlibrary_247f4" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="CareTeamMemberCareTeam" parentDisplayName="Care Team" solution="HealthcareFoundation (4.3.3.12)" id="{06ba0d70-f59e-eb11-b1ac-000d3a379f3f}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="AddCareTeam" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{0e7cefd9-6e51-47ca-862d-9e57dd6ee599}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="CareTeam" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{12a72ee8-1887-4ac1-8e16-2e68c02d540f}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
+          <package>msdynce_AppCommonAnchor (9.0.24052.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Live Persona Card Form" parentDisplayName="Contact" solution="msdynce_AppCommonPatch201904 (9.0.24052.10002)" id="{449faa0e-f471-48ec-87d0-4719909546d2}">
+          <package>msdynce_AppCommonAnchor (9.0.24052.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Medication Request Main Form" parentDisplayName="Medication Request" solution="FHIRCommonCore (4.4.3.5)" id="{50ab2baf-d7b6-4f93-b6df-7891cfdfe342}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Create" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}">
+          <package>msdynce_AppCommonAnchor (9.0.24052.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Patient - Administrative" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{6e4e9cbe-7b7d-4326-ad66-9831c61fe1fc}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}">
+          <package>msdynce_AppCommonAnchor (9.0.24052.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Patient Quick View" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{8abf88b0-c1e0-ea11-a813-000d3a579c39}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Medication Request Patient" parentDisplayName="Medication Request" solution="HealthcareFoundation (4.3.3.12)" id="{9427f6e7-5c8a-4464-8047-ef5d066cc869}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="CareTeamMemberContact" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{9577943f-35ac-4b59-8588-36ba2d96e4f0}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Patient Administrative Snapshot Configuration" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{ac81811d-d9f7-ec11-bb3d-000d3a5aee57}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Patient - Clinical" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{adfda52b-3fed-ea11-a817-000d3a8ddfb2}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Medication Request Clinical Timeline" parentDisplayName="Medication Request" solution="HealthcareFoundation (4.3.3.12)" id="{ba7bcfb5-3f3f-eb11-a813-000d3a122b89}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Form" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}">
+          <package>msdynce_AppCommonAnchor (9.0.24052.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="CareTeamMemberOrg" parentDisplayName="Account" solution="HealthcareFoundation (4.3.3.12)" id="{d4212d2c-f39e-eb11-b1ac-000d3a3797e6}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Reference Panel" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{d880c3cf-80e2-42f3-82f9-24d040d09f17}">
+          <package>msdynce_AppCommonAnchor (9.0.24052.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Practitioner" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{dddd922b-0f07-eb11-a813-000d3a31c867}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Patient Clinical Snapshot Configuration" parentDisplayName="Contact" solution="HealthcareFoundation (4.3.3.12)" id="{e4e25294-d2f7-ec11-bb3d-000d3a35d3f8}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Side Panel" parentDisplayName="Account" solution="HealthcareFoundation (4.3.3.12)" id="{e87a63b3-177d-ed11-81ac-00224805ca8f}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Side Panel" parentDisplayName="Care Team" solution="HealthcareFoundation (4.3.3.12)" id="{f87f09ee-4e34-ed11-9db1-000d3a3415dc}">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Care Team Member Quick View" parentDisplayName="Care Team Participant" solution="FHIRClinicalCareTeam (4.2.3.3)" id="{fae059e3-6b7e-472d-991f-9235389211e8}">
+          <package>FHIRAnchor (4.4.3.5)</package>
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr_/_imgs/HealthcareProvider_AppIcon.svg" displayName="msemr_/_imgs/HealthcareProvider_AppIcon.svg" solution="HealthcareFoundation (4.3.3.12)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr__imgs/msemr_schedules_16" displayName="msemr__imgs/msemr_schedules_16" solution="HealthcareFoundation (4.3.3.12)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_schedule" displayName="Schedule" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msemr__imgs/msemr_schedules_32" displayName="msemr__imgs/msemr_schedules_32" solution="HealthcareFoundation (4.3.3.12)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="1" schemaName="msemr_schedule" displayName="Schedule" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="msemr_HealthcareAdministration" solution="HealthcareFoundation (4.3.3.12)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" solution="HealthcareFoundation (4.3.3.12)">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="80" schemaName="msemr_HealthcareAdministration" displayName="Healthcare Administration" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="AppElement" displayName="msemr_msemr_HealthcareAdministration_canvasappid_msemr_mergepatientsettingspage_4e57c" solution="HealthcareFoundation (4.3.3.12)" id.uniquename="msemr_msemr_HealthcareAdministration_canvasappid_msemr_mergepatientsettingspage_4e57c">
+          <package>HealthcareFoundationAnchor (4.4.3.6)</package>
+        </Required>
+        <Dependent type="AppElement" displayName="msemr_msemr_HealthcareAdministration_canvasappid_msemr_mergepatientsettingspage_4e57c" id.uniquename="msemr_msemr_HealthcareAdministration_canvasappid_msemr_mergepatientsettingspage_4e57c" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

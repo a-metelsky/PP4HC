@@ -1,0 +1,57 @@
+/// <reference path="../../node_modules/@types/xrm/index.d.ts" />
+function generateSlots(primaryControl) {
+
+    var notification = {
+        level: 4,
+        type: 2, // 2 is for an info notification
+        title: 'Version',
+        message: new Date().toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false // Change to true if you want 12-hour format
+        })
+    };
+
+    Xrm.App.addGlobalNotification(notification);
+
+    var formContext = primaryControl;
+
+    var slotDuration = formContext.getAttribute('cr1d8_defaultslotduration').getValue();
+    var start = formContext.getAttribute('msemr_planninghorizonstartdatetime').getValue();
+    var end = formContext.getAttribute('msemr_planninghorizonenddatetime').getValue();
+
+    var practitionerId = formContext.getAttribute("practitioner").getValue()[0].id;
+
+    Xrm.WebApi.retrieveRecord("contact", practitionerId, "?$select=emailaddress1").then(
+        function success(result) {
+            var email = result.emailaddress1;
+            var params = {
+                "required": email,
+                "slotDuration": slotDuration,
+                "start": start,
+                "end": end
+            };
+
+            var flowUrl = "https://your-flow-url";
+            var req = new XMLHttpRequest();
+            req.open("POST", flowUrl, true);
+            req.setRequestHeader("Content-Type", "application/json");
+            req.onreadystatechange = function () {
+                if (req.readyState === 4) {
+                    if (req.status === 200 || req.status === 202) {
+                        console.log("Flow triggered successfully:", req.responseText);
+                    } else {
+                        console.error("Error triggering flow:", req.responseText);
+                    }
+                }
+            };
+            req.send(JSON.stringify(params));
+        },
+        function error(err) {
+            console.error("Error retrieving practitioner email:", err.message);
+        }
+    );
+    console.log(practitioner);
+
+}

@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6", // Or the ECMAScript version of your choice
+        "module": "commonjs",
+        "checkJs": true, // Enable type checking in JS files
+        "allowSyntheticDefaultImports": true,
+        "noEmit": true,
+        "lib": [
+            "es6",
+            "dom"
+        ] // Include DOM library for browser global variables
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

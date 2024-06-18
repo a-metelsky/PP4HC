@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>msemr_HealthcareAdministration</UniqueName>
+  <IntroducedVersion>1.0.0.22</IntroducedVersion>
+  <WebResourceId>786b4da9-ac01-eb11-a813-000d3a31cb42</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents />
+  <LocalizedNames>
+    <LocalizedName description="Healthcare Administration" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Manage patient data." languagecode="1033" />
+  </Descriptions>
+  <appelements>
+    <appelement uniquename="cr1d8_msemr_HealthcareAdministration_canvasappid_cr1d8_healthcareadministrationdefaultcommandlibrary_247f4">
+      <canvasappid>
+        <name>cr1d8_healthcareadministrationdefaultcommandlibrary_247f4</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>cr1d8_msemr_HealthcareAdministration_canvasappid_cr1d8_healthcareadministrationdefaultcommandlibrary_247f4</name>
+    </appelement>
+    <appelement uniquename="msemr_msemr_HealthcareAdministration_canvasappid_msemr_mergepatientsettingspage_4e57c"></appelement>
+  </appelements>
+</AppModule>

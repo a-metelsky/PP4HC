@@ -1,0 +1,31 @@
+<appaction uniquename="new__GenerateSlots1!c6431892605549bf9a9c0b3969121ce1!msemr_HealthcareAdministration!msemr_schedule!0">
+  <appmoduleid>
+    <uniquename>msemr_HealthcareAdministration</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Generate Slots">
+    <label description="Generate Slots" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>msemr_schedule</logicalname>
+  </contextentity>
+  <contextvalue>msemr_schedule</contextvalue>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>GenerateSlots1!c6431892605549bf9a9c0b3969121ce1</name>
+  <onclickeventjavascriptfunctionname>generateSlots</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>2277e969-9729-ef11-840a-7c1e5204b7df</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100005.5000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>
