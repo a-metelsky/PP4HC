@@ -1,19 +1,8 @@
 /// <reference path="../../node_modules/@types/xrm/index.d.ts" />
-function generateSlots(primaryControl) {
 
-    var notification = {
-        level: 4,
-        type: 2, // 2 is for an info notification
-        title: 'Version',
-        message: new Date().toLocaleTimeString('en-US', {
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            hour12: false // Change to true if you want 12-hour format
-        })
-    };
+this.generateSlots = (primaryControl) => {
 
-    Xrm.App.addGlobalNotification(notification);
+    showVersion();
 
     var formContext = primaryControl;
 
@@ -33,7 +22,7 @@ function generateSlots(primaryControl) {
                 "end": end
             };
 
-            var flowUrl = "https://your-flow-url";
+            var flowUrl = "https://prod-04.uksouth.logic.azure.com:443/workflows/f17dc2d5fc2040df9d6df791b2d7eb0a/triggers/manual/paths/invoke?api-version=2016-06-01";
             var req = new XMLHttpRequest();
             req.open("POST", flowUrl, true);
             req.setRequestHeader("Content-Type", "application/json");
@@ -54,4 +43,20 @@ function generateSlots(primaryControl) {
     );
     console.log(practitioner);
 
+
+    function showVersion() {
+        var notification = {
+            level: 4,
+            type: 2,
+            title: 'Version',
+            message: new Date().toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false // Change to true if you want 12-hour format
+            })
+        };
+
+        Xrm.App.addGlobalNotification(notification);
+    }
 }
